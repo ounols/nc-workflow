@@ -29,6 +29,10 @@ jobs:
       with:
         python-version: "3.9"
         
+    - name: Install chrome
+      run: |
+        sudo apt install chromium-browser xvfb
+        
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
