@@ -34,7 +34,7 @@ jobs:
         
     - name: Install chrome
       run: |
-        sudo apt install chromium-browser xvfb
+        sudo apt install chromium-browser xvfb imagemagick
         
     - name: Install dependencies
       run: |
