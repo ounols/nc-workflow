@@ -34,7 +34,7 @@ jobs:
         
     - name: Change Policy
       run: |
-        sed -i '/<policy domain="path" rights="none" pattern="@\*"/d' /etc/ImageMagick-6/policy.xml
+        sudo sed -i '/<policy domain="path" rights="none" pattern="@\*"/d' /etc/ImageMagick-6/policy.xml
         
     - name: Install dependencies
       run: |
