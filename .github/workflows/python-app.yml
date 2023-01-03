@@ -32,9 +32,9 @@ jobs:
       with:
         python-version: "3.9"
         
-    - name: Install chrome
+    - name: Change Policy
       run: |
-        sudo apt install chromium-browser xvfb imagemagick
+        sed -i '/<policy domain="path" rights="none" pattern="@\*"/d' /etc/ImageMagick-6/policy.xml
         
     - name: Install dependencies
       run: |
